@@ -1,56 +1,48 @@
 # 🗓️ Interactive Wall Calendar
 
-**Repository Link**: [https://github.com/devsoni0419/interactive-calendar](https://github.com/devsoni0419/interactive-calendar)
+**Official Repository**: [https://github.com/devsoni0419/interactive-calendar](https://github.com/devsoni0419/interactive-calendar)  
+**Live Application**: [https://interactive-calendar-zeta-lovat.vercel.app/](https://interactive-calendar-zeta-lovat.vercel.app/)
 
-A premium, highly interactive React calendar component designed to mimic the aesthetic and feel of a physical wall calendar. Featuring glassmorphism, dynamic seasonal themes, and a robust notes system.
+---
 
-
+A premium, highly interactive React calendar component designed to mimic the tactile feel of a physical wall calendar. This project balances modern aesthetics like glassmorphism and HSL-based dynamic themes with robust functionality for planning and date management.
 
 ## ✨ Key Features
 
 - 🎨 **Dynamic Theme Engine**  
-  Automatically extracts color palettes from monthly hero images to theme the entire UI.
+  Intelligent HSL palette extraction from monthly hero images ensuring the UI (backgrounds, accents, and text) is always in harmony with the current season's scenery.
 
-- 🌬️ **Seasonal Dynamics**  
-  Interactive particles (Snow, Blossoms, Sparkles, Autumn Leaves) based on month.
+- 🌬️ **Seasonal Atmosphere**  
+  Month-specific interactive particles (Snowflakes for Winter, Blossoms for Spring, Sparkles for Summer, and Autumn Leaves) to create an immersive user experience.
 
-- 📅 **Date Range Selection**  
-  Select ranges via click or mouse drag.
+- 📅 **Intuitive Range Selection**  
+  Select date ranges seamlessly via click-to-range or natural mouse-drag gestures, ideal for booking or multi-day event planning.
 
-- 📝 **Dual Notes System**
-  - Month Notes for overall planning
-  - Range/Day Notes for detailed tracking
+- 📝 **Advanced Notes System**  
+  Dual-layered organization:
+  - **Month Notes**: Global objectives for the entire month.
+  - **Selection Notes**: Pin specific notes to a date or a selected range.
 
-- ✨ **Physical Aesthetic**  
-  Spiral binding UI + smooth page-flip animations.
+- ✨ **Physical Metaphor UI**  
+  Authentic spiral binding design and smooth page-flip animations that simulate turning the page of a high-end wall calendar.
 
-- 🇮🇳 **Holiday Integration**  
-  Includes Indian holidays (2026–2027).
+- 🇮🇳 **Localized Holiday Data**  
+  Pre-integrated Indian holiday calendar covering 2026 and 2027.
 
-- 🌙 **Adaptive Mode**  
-  Light/Dark theme with system preference + manual toggle.
+- 🌙 **Adaptive Appearance**  
+  Deeply integrated Light/Dark modes that automatically sync with system preferences while allowing for instant manual toggles.
 
-- ⚡ **Keyboard Optimized**  
-  Power-user shortcuts for fast navigation.
+- ⚡ **Power-User Shortcuts**  
+  Engineered for speed with a comprehensive set of keyboard shortcuts for navigation and theme toggling.
 
 ---
 
-## 🧠 Design Choices
+## 🛠️ Modern Tech Stack
 
-- **Dynamic Visual Language**  
-  Uses HSL-based palette extraction from images for immersive UI.
-
-- **Physical Metaphor**  
-  Spiral binding + page transitions for real-world feel.
-
-- **Vanilla CSS Performance**  
-  CSS variables instead of Tailwind for control + lighter bundle.
-
-- **UX Micro-interactions**  
-  Particles + toasts for better feedback.
-
-- **State Persistence**  
-  LocalStorage for saving notes without backend.
+- **React 19**: Utilizing the latest React features for efficient state management and performance.
+- **Vite 8**: Leveraging the next generation of build tools for lightning-fast development.
+- **Vanilla CSS**: Pure CSS Variables and HSL logic for a lightweight, high-performance styling system without the overhead of external frameworks.
+- **Persistence**: Automated `LocalStorage` synchronization ensuring your notes and theme preferences are saved locally without needing a backend.
 
 ---
 
@@ -58,21 +50,19 @@ A premium, highly interactive React calendar component designed to mimic the aes
 
 | Shortcut | Action |
 | :--- | :--- |
-| `←` / `→` | Previous / Next Month |
-| `T` | Jump to Today |
-| `D` | Toggle Dark Mode |
-| `?` | View Shortcuts |
-| `Esc` | Close Popups |
+| `←` / `→` | Navigate Previous / Next Month |
+| `T` | Snap to Today's Date |
+| `D` | Toggle Dark / Light Mode |
+| `?` | Toggle Help & Shortcut Modal |
+| `Esc` | Close all Popups and Modals |
 
 ---
 
-## 🛠️ Tech Stack
+## 📂 Project Architecture
 
-- **Framework**: React 19  
-- **Build Tool**: Vite 8  
-- **Styling**: Vanilla CSS (CSS Variables + HSL)  
-- **Icons**: Emoji-based  
-- **Persistence**: LocalStorage  
+* `src/components/` → Modular component architecture for the Calendar grid, Day cells, and Notes.
+* `src/utils/` → Centralized logic for date calculations and holiday data.
+* `src/App.css` → Highly optimized design system using CSS Variables for theme switching.
 
 ---
 
@@ -85,46 +75,23 @@ cd interactive-calendar
 ```
 
 ### 2. Install dependencies
-
 ```bash
 npm install
 ```
 
-### 3. Run the app
-
+### 3. Launch Development Server
 ```bash
 npm run dev
 ```
 
 ---
 
-## 📂 Project Structure
+## 📌 Future Roadmap
 
-* `src/components/` → Calendar UI components
-* `src/utils/` → Date logic + holidays
-* `src/App.css` → Styling + animations
-* `public/` → Images & assets
-
----
-
-## 📌 Future Improvements
-
-* Fix notes persistence (localStorage sync)
-* Add backend support (optional)
-* Google Calendar integration
-* Export/import notes
+* **Multi-Device Sync**: Optional backend integration for cross-device note synchronization.
+* **External Integrations**: Real-time sync with Google Calendar and Outlook.
+* **Data Management**: Export and Import functionality for notes (JSON/CSV).
+* **Extended Holiday Support**: Support for international holiday packs.
 
 ---
-
-## 🌟 Demo
-
-*Add your Loom / YouTube link here*
-
----
-
-## 📄 License
-
-MIT License
-
----
-*Built with passion for elegant and functional design.*
+*Built with passion for elegant, functional frontend engineering.*
